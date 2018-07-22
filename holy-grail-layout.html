@@ -14,25 +14,27 @@
 
 			header, footer {
 				background-color: #2AE3A0;
-				height: 80px;
+				height: 70px;
+				padding: 10px;
 			}
 
 			main {
 				display: flex;
 				flex-direction: row;
-				margin: 10px 0px;
+				margin: 8px 0px;
 			}
 			
 			main * {
-				min-height: 600px;
-				flex-grow: 1;
+				padding: 10px;
+				flex: 1 1 20%;
 			}
 
 			article {
 				order: 2;
 				background-color: #EDEDED;
-				margin: 0 10px;
-				flex-grow: 3;
+				margin: 0 8px;
+				flex: 1 1 60%;
+				min-height: 600px;
 			}
 
 			nav {
@@ -43,6 +45,28 @@
 			aside {
 				order: 3;
 				background-color: #38ABFF;
+			}
+
+			@media screen and (max-width: 640px) {
+				main {
+					flex-direction: column;
+					flex: 0 1 auto;
+				}
+
+				article {
+					order: 1;
+					flex: 1 1 auto;
+					margin: 0;
+				}
+
+				nav {
+					order: 2;
+					margin: 8px 0;
+				}
+
+				aside {
+					order: 3;
+				}
 			}
 		</style>
 	</head>
