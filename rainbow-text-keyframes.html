@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Rainbow Text</title>
+		<style type="text/css">
+			p {
+			  animation-name: rainbowtext;
+			  animation-duration: 3s;
+			  animation-timing-function: linear;
+			  animation-delay: 0s;
+			  animation-iteration-count: infinite;
+			}
+
+			@keyframes rainbowtext {
+			  0% {
+			    color: red;
+			    font-size: 50px;
+			  }
+			  20% {
+			    color: orange;
+			  }
+			  40% {
+			    color: yellow;
+			    font-size: 100px;
+			  }
+			  60% {
+			    color: green;
+			  }
+			  80% {
+			    color: blue;
+			  }
+			  100% {
+			    color: purple;
+			    font-size: 50px;
+			  }
+			}
+		</style>
+	</head>
+	<body>
+		<p>HELLO!</p>
+	</body>
+</html>
