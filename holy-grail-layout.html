@@ -2,6 +2,49 @@
 <html>
 	<head>
 		<title>Holy Grail Layout</title>
+		<style type="text/css">
+			body {
+				background-color: #2C5F8A;
+				font-family: Helvetica;
+			}
+
+			body * {
+				border-radius: 10px;
+			}
+
+			header, footer {
+				background-color: #2AE3A0;
+				height: 80px;
+			}
+
+			main {
+				display: flex;
+				flex-direction: row;
+				margin: 10px 0px;
+			}
+			
+			main * {
+				min-height: 600px;
+				flex-grow: 1;
+			}
+
+			article {
+				order: 2;
+				background-color: #EDEDED;
+				margin: 0 10px;
+				flex-grow: 3;
+			}
+
+			nav {
+				order: 1;
+				background-color: #8A8A8A;
+			}
+
+			aside {
+				order: 3;
+				background-color: #38ABFF;
+			}
+		</style>
 	</head>
 	<body>
 		<header>
